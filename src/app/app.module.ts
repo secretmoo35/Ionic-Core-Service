@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
 import { RestApiService } from '../providers/rest-api-service/rest-api-service';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from '../providers/data-service/data-service';
