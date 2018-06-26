@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RestApiService } from '../providers/rest-api-service/rest-api-service';
 import { HttpClientModule } from '@angular/common/http';
+import { DataService } from '../providers/data-service/data-service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    RestApiService
+    RestApiService,
+    DataService
   ]
 })
 export class AppModule { }
