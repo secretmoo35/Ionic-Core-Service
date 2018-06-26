@@ -3,28 +3,32 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class DataService {
-  messageType: string = 'danger';
+  messageType: string = '';
   message: string = '';
 
   constructor(public http: HttpClient) {
     console.log('Hello DataService Provider');
   }
 
-  error(message){
+  error(message) {
     this.messageType = 'danger';
     this.message = message;
   }
 
-  success(message){
+  success(message) {
     this.messageType = 'success';
     this.message = message;
   }
 
-  warning(message){
+  warning(message) {
     this.messageType = 'warning';
     this.message = message;
   }
 
+  info(message) {
+    this.messageType = 'info';
+    this.message = message;
+  }
 
 
 
